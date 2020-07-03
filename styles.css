@@ -1,10 +1,30 @@
 html {
-    background: url(background.jpg) no-repeat center center fixed;
+    background: url(images/background-1920x1440.jpg) no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
     font-family: 'Open Sans', sans-serif;
+}
+@media (max-width: 1200px) and (max-height: 900px) {
+    html {
+        background: url(images/background-1200x900.jpg) no-repeat center center fixed;
+    }
+}
+@media (max-width: 992px) and (max-height: 774px) {
+    html {
+        background: url(images/background-992x744.jpg) no-repeat center center fixed;
+    }
+}
+@media (max-width: 768px) and (max-height: 576px) {
+    html {
+        background: url(images/background-768x576.jpg) no-repeat center center fixed;
+    }
+}
+@media (max-width: 576px) and (max-height: 432px) {
+    html {
+        background: url(images/background-576x432.jpg) no-repeat center center fixed;
+    }
 }
 body {
     margin: 0;
@@ -26,23 +46,40 @@ h1 {
     margin-left: auto;
     margin-right: auto;
     max-width: 680px;
+    padding: 0 20px;
 }
 .social > ul {
     width: 100%;
-    font-size: 56pt;
+    font-size: 28pt;
     list-style: none;
     table-layout: fixed;
     display: table;
     padding: 0;
     margin: 0.5em 0;
 }
-@media (max-width: 600px) {
+@media (min-width: 576px) {
     .social > ul {
-        font-size: 32pt;
+        font-size: 44pt;
+    }
+}
+@media (min-width: 768px) {
+    .social > ul {
+        font-size: 48pt;
+    }
+}
+@media (min-width: 992px) {
+    .social > ul {
+        font-size: 52pt;
+    }
+}
+@media (min-width: 1200px) {
+    .social > ul {
+        font-size: 56pt;
     }
 }
 .social > ul > li {
     display: table-cell;
+    line-height: 87px;
 }
 a, a:link, a:visited, a:hover, a:active {
     color: #000;
