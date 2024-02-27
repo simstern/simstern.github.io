@@ -45,37 +45,17 @@ h1 {
 .social {
     margin-left: auto;
     margin-right: auto;
-    max-width: 680px;
+    max-width: 240px;
     padding: 0 20px;
 }
 .social > ul {
     width: 100%;
-    font-size: 28pt;
+    font-size: 48pt;
     list-style: none;
     table-layout: fixed;
     display: table;
     padding: 0;
     margin: 0.5em 0;
-}
-@media (min-width: 576px) {
-    .social > ul {
-        font-size: 44pt;
-    }
-}
-@media (min-width: 768px) {
-    .social > ul {
-        font-size: 48pt;
-    }
-}
-@media (min-width: 992px) {
-    .social > ul {
-        font-size: 52pt;
-    }
-}
-@media (min-width: 1200px) {
-    .social > ul {
-        font-size: 56pt;
-    }
 }
 .social > ul > li {
     display: table-cell;
